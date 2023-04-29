@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <script src="../dist/analytics.min.js"></script>
+    <script>
+      analytics
+        .initializeAnalytics()
+        .then((response) => response.json())
+        .then((response) => {
+          console.log(response);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "analytics",
+  "version": "1.0.0",
+  "main": "dist/analytics.cjs.js",
+  "module": "dist/analytics.esm.js",
+  "types": "dist/analytics.d.ts",
+  "engines": {
+    "node": "20.0.0"
+  },
+  "scripts": {
+    "build": "rimraf dist && rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.1",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/node": "^18.16.3",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.21.1",
+    "rollup-plugin-dts": "^5.3.0"
+  }
+}
